@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.0.0' // 최신 버전으로 업데이트
+        classpath 'com.android.tools.build:gradle:8.4.0' // 최신 버전으로 업데이트
     }
 }
 
