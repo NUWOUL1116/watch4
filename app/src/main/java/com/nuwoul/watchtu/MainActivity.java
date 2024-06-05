@@ -142,7 +142,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializeSamsungHealth() {
-        HealthDataService healthDataService = new HealthDataService();
+        HealthDataService healthDataService = new HealthDataService();  
+        #
         try {
             healthDataService.initialize(this);
         } catch (Exception e) {
@@ -177,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
         HealthDataResolver resolver = new HealthDataResolver(mStore, null);
 
         // 오늘의 심박수 데이터를 가져옵니다.
+        // 작동 확인 필요
         GregorianCalendar today = new GregorianCalendar();
         today.set(Calendar.HOUR_OF_DAY, 0);
         today.set(Calendar.MINUTE, 0);
@@ -251,6 +253,8 @@ public class MainActivity extends AppCompatActivity {
         mStore.disconnectService();
         super.onDestroy();
     }
+
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {

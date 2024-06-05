@@ -23,3 +23,4 @@
 -keep class com.samsung.** { *; }
 -dontwarn com.samsung.**
 # 삼성sdk 활성화
+# 이거 왜 안됨?
